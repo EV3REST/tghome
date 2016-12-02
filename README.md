@@ -12,7 +12,10 @@ Roadmap:
 - [python-vlc](https://github.com/oaubert/python-vlc)
 
 ##Usage
-TODO: Write usage instructions
+Player:
+
+All the music files must be stored in `tracks` folder.
+
 ## Donate
 You can donate on https://patreon.com/ev3rest
 ##Credits
