@@ -12,7 +12,7 @@ Roadmap:
 - [python-vlc](https://github.com/oaubert/python-vlc)
 
 ##Usage
-Player:
+###Player:
 
 All the music files must be stored in `tracks` folder.
 
