@@ -14,7 +14,8 @@ Roadmap:
 ##Usage
 ###Player:
 
-All the music files must be stored in `tracks` folder.
+All the music files must be stored in the `tracks` folder.
+Volume control currently works only on macOS.
 
 ## Donate
 You can donate on https://patreon.com/ev3rest
