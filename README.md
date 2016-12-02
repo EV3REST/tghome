@@ -1,6 +1,7 @@
 #Telegram-based Smart Home
 Ready:
 - Player (90%)
+
 Roadmap:
 - Wake on LAN
 - Lighting
