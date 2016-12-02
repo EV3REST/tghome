@@ -1,5 +1,9 @@
 #Telegram-based Smart Home
-TODO: Write a project description
+Ready:
+- Player (90%)
+Roadmap:
+- Wake on LAN
+- Lighting
 ##Required packages
 - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
 - [mutagen](https://github.com/quodlibet/mutagen)
