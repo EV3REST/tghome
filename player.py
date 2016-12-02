@@ -39,12 +39,6 @@ pausekeyboard = InlineKeyboardMarkup([[InlineKeyboardButton("Resume", callback_d
 volume = round(((int(os.popen("osascript -e 'set ovol to output volume of (get volume settings)'").read()))/10)) #Get current volume (macOS)
 print(volume)
 
-artist = ""
-title = ""
-genre = ""
-ttype = ""
-year = ""
-
 gc.enable() #Garbage collector
 
 def random():
