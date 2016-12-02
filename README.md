@@ -15,6 +15,7 @@ Roadmap:
 ###Player:
 
 All the music files must be stored in the `tracks` folder.
+
 Volume control currently works only on macOS.
 
 ## Donate

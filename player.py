@@ -23,9 +23,6 @@ import gc
 import requests
 import datetime
 
-from pybooru import Pybooru
-from retrying import retry
-
 from telegram import Emoji, ForceReply, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, ReplyKeyboardMarkup, KeyboardButton, InlineQueryResultArticle, InlineQueryResultPhoto
 from telegram.ext import Updater, CommandHandler, MessageHandler, CallbackQueryHandler, InlineQueryHandler, Filters
 from telegram.ext.dispatcher import run_async
