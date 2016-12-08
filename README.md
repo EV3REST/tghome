@@ -11,12 +11,13 @@ Roadmap:
 - [mutagen](https://github.com/quodlibet/mutagen)
 - [python-vlc](https://github.com/oaubert/python-vlc)
 
-##Usage
+##Usage & Features
 ###Player:
 
 All the music files must be stored in the `tracks` folder.
 
 Volume control currently works only on macOS.
+`/start` - Starts the bot. Replies back with random file from `tracks` folder.
 
 ## Donate
 You can donate on https://patreon.com/ev3rest
