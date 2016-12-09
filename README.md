@@ -17,6 +17,7 @@ Roadmap:
 All the music files must be stored in the `tracks` folder.
 
 Volume control currently works only on macOS.
+
 `/start` - Starts the bot. Replies back with random file from `tracks` folder.
 
 ## Donate
