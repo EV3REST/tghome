@@ -61,7 +61,7 @@ def track():
 	p = vlc.MediaPlayer(file)
 
 @run_async
-def start(bot, update, chat_id=None, message_id=None):
+def player(bot, update, chat_id=None, message_id=None):
 	global artist
 	global title
 	if chat_id==None:
@@ -184,7 +184,7 @@ def text(bot, update):
 		track_id = int(update.message.text)
 		p.stop()
 		track()
-		start(bot, update, message_id=update.message.message_id)
+		player(bot, update, message_id=update.message.message_id)
 		play(bot, update, chat_id=update.message.chat_id, message_id=update.message.message_id)
 	else:
 		print('Nope')
@@ -224,7 +224,7 @@ def main():
 	token = "TOKEN"
 	updater = Updater(token, workers=5)
 
-	updater.dispatcher.add_handler(CommandHandler('start', start))
+	updater.dispatcher.add_handler(CommandHandler('player', player))
 	updater.dispatcher.add_handler(CommandHandler('play', play))
 	updater.dispatcher.add_handler(CommandHandler('pause', pause))
 	updater.dispatcher.add_handler(CommandHandler('stop', stop))
