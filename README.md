@@ -18,7 +18,7 @@ All the music files must be stored in the `tracks` folder.
 
 Volume control currently works only on macOS.
 
-`/start` - Starts the bot. Replies back with random file from `tracks` folder.
+`/player` - Starts the bot. Replies back with random file from `tracks` folder.
 
 ## Donate
 You can donate on https://patreon.com/ev3rest
