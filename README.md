@@ -20,6 +20,8 @@ Volume control currently works only on macOS.
 
 `/player` - Starts the bot. Replies back with random file from `tracks` folder.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6NF06UVx0Ow" frameborder="0" allowfullscreen></iframe>
+
 ## Donate
 You can donate on https://patreon.com/ev3rest
 ##Credits
