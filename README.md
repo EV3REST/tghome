@@ -14,7 +14,7 @@ Roadmap:
 ##Usage & Features
 ###Player 
 
-- [Demo](https://www.youtube.com/watch?v=6NF06UVx0Ow):
+- [Demo](https://www.youtube.com/watch?v=6NF06UVx0Ow)
 
 All the music files must be stored in the `tracks` folder.
 
