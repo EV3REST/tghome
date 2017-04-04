@@ -1,4 +1,4 @@
-#Telegram-based Smart Home
+## Telegram-based Smart Home
 Ready:
 - Player (90%)
 
@@ -6,13 +6,13 @@ Roadmap:
 - Wake on LAN
 - Lighting
 
-##Required packages
+## Required packages
 - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
 - [mutagen](https://github.com/quodlibet/mutagen)
 - [python-vlc](https://github.com/oaubert/python-vlc)
 
-##Usage & Features
-###Player 
+## Usage & Features
+### Player 
 
 - [Demo](https://www.youtube.com/watch?v=6NF06UVx0Ow)
 
@@ -25,5 +25,5 @@ Volume control currently works only on macOS.
 
 ## Donate
 You can donate on https://patreon.com/ev3rest
-##Credits
+## Credits
 Developer: [@ev3rest](https://telegram.me/ev3rest)
