@@ -24,6 +24,6 @@ Volume control currently works only on macOS.
 
 
 ## Donate
-You can donate on https://patreon.com/ev3rest
+You can donate on https://paypal.me/ev3rest
 ## Credits
 Developer: [@ev3rest](https://telegram.me/ev3rest)
