@@ -75,20 +75,8 @@ def player(bot, update, chat_id = None, message_id = None):
 		filename = file
 		mp3info = EasyID3(filename)
 		data = mp3info.items()
-		artist = str(data).split("('artist', ['", 1)[1]
-		artist = artist.split("']), ('", 1)[0]
-		artist = artist.replace("'", "")
-		artist = artist.replace("(", "")
-		artist = artist.replace(")", "")
-		artist = artist.replace("[", "")
-		artist = artist.replace("]", "")
-		title = str(data).split("('title', ['", 1)[1]
-		title = title.split("']), ('", 1)[0]
-		title = title.replace("'", "")
-		title = title.replace("(", "")
-		title = title.replace(")", "")
-		title = title.replace("[", "")
-		title = title.replace("]", "")
+		artist = replaceData(data, 'artist')
+		title = replaceData(data, 'title')
 		bot.sendMessage(chat_id, text = 'Hey!\n `Creator:`@ev3rest\n\n*%s. %s* - %s' % (str(track_id), str(artist), str(title)), reply_markup = rmark, parse_mode = ParseMode.MARKDOWN)
 	else:
 		bot.sendMessage(chat_id, text = 'You are not `sudo`. Contact @ev3rest', parse_mode = ParseMode.MARKDOWN)
@@ -101,20 +89,8 @@ def edit(bot, update, chat_id = None, message_id = None):
 	filename = file
 	mp3info = EasyID3(filename)
 	data = mp3info.items()
-	artist = str(data).split("('artist', ['", 1)[1]
-	artist = artist.split("']), ('", 1)[0]
-	artist = artist.replace("'", "")
-	artist = artist.replace("(", "")
-	artist = artist.replace(")", "")
-	artist = artist.replace("[", "")
-	artist = artist.replace("]", "")
-	title = str(data).split("('title', ['", 1)[1]
-	title = title.split("']), ('", 1)[0]
-	title = title.replace("'", "")
-	title = title.replace("(", "")
-	title = title.replace(")", "")
-	title = title.replace("[", "")
-	title = title.replace("]", "")
+	artist = replaceData(data, 'artist')
+	title = replaceData(data, 'title')
 	try:
 		bot.editMessageText(message_id = message_id, chat_id = chat_id, text = 'Hey!\n `Creator:`@ev3rest\n\n*%s. %s* - %s' % (str(track_id), str(artist), str(title)), reply_markup = rmark, parse_mode = ParseMode.MARKDOWN)
 	except:
@@ -124,7 +100,7 @@ def edit(bot, update, chat_id = None, message_id = None):
 @run_async
 def nextt(bot, update, chat_id = None, message_id = None):
 	global track_id
-	track_id +=1
+	track_id += 1
 	p.stop()
 	track()
 	edit(bot, update, chat_id, message_id)
@@ -243,6 +219,17 @@ def main():
 
 
 	updater.idle()
+
+def replaceData(data, name):
+	replaced = str(data).split("('%s' % name, ['", 1)[1]
+	replaced = replaced.split("']), ('", 1)[0]
+	replaced = replaced.replace("'", "")
+	replaced = replaced.replace("(", "")
+	replaced = replaced.replace(")", "")
+	replaced = replaced.replace("[", "")
+	replaced = replaced.replace("]", "")
+
+	return replaced
 
 if __name__ == '__main__':
 	main()
