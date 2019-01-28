@@ -1,6 +1,6 @@
 ## Telegram-based Smart Home
 Ready:
-- Player (90%)
+- Player (70%)
 
 Roadmap:
 - Lighting
