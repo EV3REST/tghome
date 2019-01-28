@@ -19,13 +19,13 @@ Volume control currently works only on macOS.
 
 There are two modes of how the player works:
 
-**Locally stored music
+**Locally stored music**
 
 All the music files must be stored in the `tracks` folder.
 
 `/lplayer` - Starts the bot. Replies back with random file from `tracks` folder.
 
-**Telegram music
+**Telegram music**
 
 Send a track to the bot. Bot replies with controls menu and starts playing the music
 
