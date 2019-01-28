@@ -3,7 +3,6 @@ Ready:
 - Player (90%)
 
 Roadmap:
-- Wake on LAN
 - Lighting
 
 ## Required packages
