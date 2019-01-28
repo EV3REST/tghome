@@ -23,7 +23,7 @@ There are two modes of how the player works:
 
 All the music files must be stored in the `tracks` folder.
 
-`/lplayer` - Starts the bot. Replies back with random file from `tracks` folder.
+`/player` - Starts the bot. Replies back with random file from `tracks` folder.
 
 **Telegram music**
 
